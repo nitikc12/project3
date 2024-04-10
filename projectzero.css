@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: right;
+  background-color: white;
+}
+a {
+  width: 100px;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 25px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 600;
+}
+/* -------------------Home Page----------------- */
+
+/* First Layout */
+
+.parent {
+  background-image: url(./image/projectzero1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding-top: 90px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 800;
+  padding-top: 15%;
+}
+.parent::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.397);
+}
+
+.parent p {
+  color: white;
+  font-size: "Poppins", sans-serif;
+  z-index: 99;
+  padding-top: 15px;
+  font-size: 15px;
+  position: relative;
+}
+.parent h1 {
+  position: relative;
+  z-index: 999;
+}
+
+.btn1 {
+  margin-top: 5%;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  background: transparent;
+  transition: 0.5s;
+  border-color: antiquewhite;
+  position: relative;
+}
+.btn1:hover {
+  background: gray;
+}
+.btn1 a {
+  color: white;
+}
+/* End of first layout */
+
+/* Second layout */
+.secondparent {
+  width: 100%;
+  height: 90vh;
+  background-color: #e9ecef;
+}
+.secflex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.secchild img {
+  width: 450px;
+}
+.secondparent h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.secoverlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  background: black;
+  cursor: pointer;
+}
+.seccontent {
+  /* top: 50%;
+    left: 50%; */
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.secchild:hover .secoverlay {
+  opacity: 0.8;
+}
+/* End of second layout */
+
+/* Third Layout */
+.thirdparent {
+  width: 100%;
+  height: 85vh;
+  background-color: white;
+}
+.thirdflex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.headthird {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+}
+.thirdright h2,
+p {
+  color: black;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+.thirdright h2 {
+  padding-top: 25%;
+  padding-bottom: 45px;
+  font-size: 35px;
+  font-weight: 900;
+}
+.thirdright p {
+  font-weight: 550;
+}
+.btn3 {
+  border-radius: 20px;
+  transition: 0.5s;
+  background: black;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 9%;
+}
+.btn3:hover {
+  background: gray;
+  transform: scale(1.05);
+}
+/* End of third layout */
+
+/* Fourthlayout */
+.fourthparent {
+  width: 100%;
+  height: 95vh;
+  /* background-color:  #e9ecef; */
+}
+.fourthflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.fourthright img {
+  width: 700px;
+  padding-top: 190px;
+}
+.fourthleft {
+  padding-top: 17%;
+  padding-left: 90px;
+}
+.fourthleft h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 37px;
+  padding-bottom: 45px;
+  font-weight: 900;
+}
+.fourthleft p {
+  font-weight: 550;
+}
+/* End of FourthLayout */
+
+/* Footer */
+.footer {
+  background-color: black;
+  padding: 60px 200px 20px;
+}
+.flexfooter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ft {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.rightfooter {
+  color: white;
+}
+.midfooter img {
+  width: 150px;
+}
+.midfooter {
+  padding-right: 30%;
+  padding-top: 10px;
+}
+ul {
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+.leftfooter img {
+  width: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footerimg {
+  width: 120px;
+  padding-top: 10px;
+}
+.footer hr {
+  padding-left: 10px;
+}
+.copyright {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+/* end of footer */
+/* --------Aboutus-------- */
+.aboutparent {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.firstabout img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  padding-top: 5%;
+}
+.paraabout {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 40px;
+}
+.aboutbtn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  transition: 0.5s;
+}
+.aboutbtn:hover {
+  background-color: gray;
+}
+.aboutsecparent h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+/* Second layout */
+.aboutsecparent h1 {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.aboutsecparent {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.aboutrow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.secondabout {
+  flex-basis: 30%;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.secondabout img {
+  max-width: 100%;
+}
+.secondabout h3,
+.secondabout p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+/* ----end of second layout------- */
+/* ----end of about us----- */
+
+/* -------------ProjectzeroProduct-------------- */
+/* ---------Video--------- */
+.vid {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.24%; /* 16:9 aspect ratio  */
+}
+.vid video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* End of video */
+
+/* First layout */
+.productparent {
+  width: 100%;
+  height: 100vh;
+  /* background:radial-gradient(#fff,#ffd6d6); */
+}
+.flexproduct {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.firstproduct img {
+  max-width: 80%;
+  margin-top: 25%;
+}
+.productparent h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.productintro {
+  margin-top: 10%;
+}
+.productintro h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 37px;
+  font-weight: 900;
+  padding-bottom: 45px;
+}
+.productintro p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 550;
+}
+.productbtn {
+  border-radius: 20px;
+  transition: 0.5s;
+  background: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15%;
+  color: white;
+}
+.productbtn:hover {
+  background-color: gray;
+}
+
+/* -----End of first layout------- */
+
+/* ----second layout----- */
+.productmain {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.plugins img {
+  max-width: 115%;
+}
+.plugins {
+  flex-basis: 28%;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.plugins h3 {
+  font-family: "Poppins", sans-serif;
+  padding-top: 10px;
+}
+
+.flexpro {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.productmain h1 {
+  padding-bottom: 35px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+/* ------End of second layout------ */
+
+/* -------Third layout------ */
+.pedals {
+  flex-basis: 28%;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.pedals img {
+  max-width: 110%;
+}
+.pedals h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------End of third layout------- */
+
+/* ----Fourth layout------ */
+.daw {
+  flex-basis: 28%;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.daw img {
+  max-width: 110%;
+}
+.daw h3 {
+  font-family: "Poppins", sans-serif;
+  padding-top: 10px;
+}
+/* -----End of fourth layout---- */
+/* -----Button and star----- */
+.buybtn {
+  border-radius: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.buybtn:hover {
+  background-color: gray;
+}
+.rating {
+  padding-top: 10px;
+}
+/*--------------- */
+
+/* -----MyCart------ */
+.cart {
+  margin-left: 20%;
+  padding-top: 5%;
+}
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+.cartinfo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cartinfo img {
+  width: 20%;
+}
+th {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  padding: 5px;
+  padding-right: 40px;
+  color: #fff;
+  background: gray;
+}
+td {
+  padding: 10px 5px;
+}
+td input {
+  width: 65px;
+  height: 30px;
+  padding: 5px;
+}
+td a {
+  color: orange;
+  font-size: 12px;
+}
+.total table {
+  border-top: 3px solid orange;
+  width: 80%;
+  max-width: 200px;
+}
+small {
+  font-family: "Poppins", sans-serif;
+}
+.total {
+  margin-left: 45%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.prosecparent {
+  width: 70%;
+  height: 100vh;
+  margin: 150px auto;
+}
+.pro img {
+  width: 55%;
+  float: left;
+  margin-right: 30px;
+}
+.prointro {
+  font-family: "Poppins", sans-serif;
+}
+.prointro h2 {
+  padding-bottom: 20px;
+  font-size: 35px;
+}
+.prointro p {
+  text-align: justify;
+}

@@ -1,0 +1,80 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 0;
+    padding: 0;
+    background: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+
+}
+.sign{
+    position: absolute;
+    height: 550px;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: black;
+    padding: 80px 40px;
+          
+}
+.sign img{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+.sign input{
+    padding: 10px;
+    border-radius: 20px;
+    width:400px;
+    margin: 8px;
+    text-align: center;
+}
+.butt{ 
+    margin-left: 165px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 90px;
+    outline: none;
+  
+}
+.butt button{
+    margin-top: 60px;
+}
+button{
+    padding: 10px;
+    border-radius: 15px;
+    width: 90px;
+    background: white;
+    color:black;
+    font-weight: 800;
+    
+}
+button:hover{
+   
+    background-position: right;
+    cursor: pointer;
+    
+   
+}
+a{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: auto;
+
+}
+.bottom{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.bottom a{
+    color: white;
+    padding-right: 15px;
+}
+   
